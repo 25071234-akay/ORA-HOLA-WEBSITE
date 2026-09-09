@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cam Hòa Lạc — Cam ép tươi mỗi ngày</title>
+<meta name="description" content="Cam Hòa Lạc - nước cam ép tươi 100%, giao nhanh trong 30 phút, không đường hóa học.">
+
+<!-- Google Fonts: Fredoka cho heading bo tròn năng động, Manrope cho phần chữ nội dung -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Chấm tròn theo con trỏ chuột, tạo cảm giác vui nhộn khi lướt web -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="#FFD23F"/>
+          <g stroke="#FF6A00" stroke-width="1.6">
+            <line x1="20" y1="20" x2="20" y2="4"/>
+            <line x1="20" y1="20" x2="34" y2="12"/>
+            <line x1="20" y1="20" x2="34" y2="28"/>
+            <line x1="20" y1="20" x2="20" y2="36"/>
+            <line x1="20" y1="20" x2="6" y2="28"/>
+            <line x1="20" y1="20" x2="6" y2="12"/>
+          </g>
+        </svg>
+      </span>
+      <span class="brand-name">ORA HOLA </span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#ly-do">Điểm mạnh của ORA</a>
+      <a href="#khach-noi-gi">Feedback</a>
+      <a href="#dat-hang">Liên hệ</a>
+    </nav>
+    <a href="#dat-hang" class="btn btn-fill nav-cta">
+      <span class="btn-fill-bg"></span>
+      <span class="btn-label">Đặt ngay</span>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Mở menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-blobs" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+  </div>
+
+  <div class="hero-inner">
+    <p class="hero-kicker">100% cam tươi · vắt trong ngày</p>
+    <h1 class="hero-title">
+      Một ly là tỉnh,<br>
+      cả ngày là <span class="squiggle">sáng</span>.
+    </h1>
+    <p class="hero-sub">
+      Cam Hòa Lạc vắt tay từng ly ngay khi bạn đặt — không pha nước,
+      không đường hóa học, chỉ có cam thật và tủ lạnh chờ sẵn cho bạn.
+    </p>
+    <div class="hero-actions">
+      <a href="#dat-hang" class="btn btn-fill btn-lg">
+        <span class="btn-fill-bg"></span>
+        <span class="btn-label">Đặt ly đầu tiên</span>
+      </a>
+      <a href="#san-pham" class="btn btn-ghost btn-lg">Xem menu</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>30&nbsp;phút</strong><span>giao tận tay</span></div>
+      <div class="stat"><strong>0%</strong><span>đường hoá học</span></div>
+      <div class="stat"><strong>4.9/5</strong><span>từ 1.200+ khách</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="glass-wrap" id="glassWrap">
+      <svg viewBox="0 0 300 420" class="glass-svg">
+        <defs>
+          <linearGradient id="juiceGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFD23F"/>
+            <stop offset="100%" stop-color="#FF6A00"/>
+          </linearGradient>
+        </defs>
+        <path d="M40 40 H260 L235 380 Q230 400 208 400 H92 Q70 400 65 380 Z"
+              fill="none" stroke="#1B1035" stroke-width="6" stroke-linejoin="round"/>
+        <clipPath id="glassClip">
+          <path d="M44 60 H256 L233 378 Q229 396 208 396 H92 Q71 396 67 378 Z"/>
+        </clipPath>
+        <rect id="juiceFill" x="44" y="140" width="212" height="260" fill="url(#juiceGrad)" clip-path="url(#glassClip)"/>
+        <path d="M60 70 L100 70 L95 90 L65 90 Z" fill="#fff" opacity="0.35"/>
+        <line x1="205" y1="10" x2="230" y2="150" stroke="#1B1035" stroke-width="6" stroke-linecap="round"/>
+        <line x1="205" y1="10" x2="230" y2="150" stroke="#FF9F45" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div class="orange-slice slice-1">🍊</div>
+      <div class="orange-slice slice-2">🍊</div>
+      <div class="orange-slice slice-3">🍊</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Vắt trong ngày</span><span class="dot">•</span>
+    <span>Không pha nước</span><span class="dot">•</span>
+    <span>Giao trong 30 phút</span><span class="dot">•</span>
+    <span>Cam tuyển chọn</span><span class="dot">•</span>
+    <span>Vắt trong ngày</span><span class="dot">•</span>
+    <span>Không pha nước</span><span class="dot">•</span>
+    <span>Giao trong 30 phút</span><span class="dot">•</span>
+    <span>Cam tuyển chọn</span><span class="dot">•</span>
+  </div>
+</div>
+
+<!-- ===== SẢN PHẨM ===== -->
+<section class="products" id="san-pham">
+  <div class="section-head">
+    <h2>Chọn ly hợp gu bạn</h2>
+    <p>Ba công thức, một lời hứa: cam thật 100%, vắt ngay trước khi giao.</p>
+  </div>
+
+  <div class="product-grid">
+    <article class="product-card" style="--tilt: -3deg">
+      <div class="product-emoji">🍊</div>
+      <h3>Cam Nguyên Chất</h3>
+      <p>Vắt tay 100%, giữ trọn vị chua ngọt tự nhiên của cam Hòa Lạc.</p>
+      <div class="price-row"><span class="price">22.000đ</span><span class="unit">/ ly 350ml</span></div>
+    </article>
+
+    <article class="product-card featured" style="--tilt: 0deg">
+      <div class="ribbon">Bán chạy nhất</div>
+      <div class="product-emoji">🧊</div>
+      <h3>Cam Đá Xay</h3>
+      <p>Cam vắt xay cùng đá viên, sánh mịn, giải nhiệt tức thì cho ngày hè.</p>
+      <div class="price-row"><span class="price">20.000đ</span><span class="unit">/ ly 400ml</span></div>
+    </article>
+
+    <article class="product-card" style="--tilt: 3deg">
+      <div class="product-emoji">🍯</div>
+      <h3>Cam Mật Ong</h3>
+      <p>Thêm chút mật ong rừng, dịu ngọt tự nhiên, tốt cho họng những hôm trái gió.</p>
+      <div class="price-row"><span class="price">28.000đ</span><span class="unit">/ ly 350ml</span></div>
+    </article>
+
+    <article class="product-card" style="--tilt: 3deg">
+      <div class="product-emoji">🧂</div>
+      <h3>Cam muối </h3>
+      <p>Chua ngọt vừa miệng, thêm chút mặn nhẹ giúp vị cam đậm đà và cực kỳ sảng khoái.</p>
+      <div class="price-row"><span class="price">25.000đ</span><span class="unit">/ ly 350ml</span></div>
+    </article>
+
+    <article class="product-card" style="--tilt: 3deg">
+      <div class="product-emoji">🥭</div>
+      <h3>Cam xoài </h3>
+      <p>Cam tươi chua nhẹ hòa quyện cùng xoài ngọt thơm, uống một ngụm là mê.</p>
+      <div class="price-row"><span class="price">25.000đ</span><span class="unit">/ ly 350ml</span></div>
+    </article>
+
+    <article class="product-card" style="--tilt: 3deg">
+      <div class="product-emoji">🍑</div>
+      <h3>Cam đào </h3>
+      <p>“Cam tươi chua thanh hòa quyện hương đào thơm ngọt, vị cân bằng, mát lạnh và cực kỳ dễ uống.</p>
+      <div class="price-row"><span class="price">28.000đ</span><span class="unit">/ ly 350ml</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== VÌ SAO CHỌN ===== -->
+<section class="why" id="ly-do">
+  <div class="section-head light">
+    <h2>Vì sao khách quay lại mỗi tuần</h2>
+    <p>Không phải lời quảng cáo — đây là điều tụi mình làm thật, mỗi ngày.</p>
+  </div>
+
+  <div class="bento">
+    <div class="bento-item bento-big">
+      <h3>Vắt sau khi bạn đặt, không để tủ lạnh sẵn</h3>
+      <p>Đơn về là cam mới được rửa, cắt, vắt — bạn nhận ly nước còn ấm tay cam vừa vắt, chưa từng qua bảo quản lâu.</p>
+    </div>
+    <div class="bento-item">
+      <h3>Cam tuyển từ vườn quen</h3>
+      <p>Nguồn cam ổn định, chọn tay từng đợt, loại bỏ trái sượng hoặc quá chín.</p>
+    </div>
+    <div class="bento-item">
+      <h3>Giao nhanh 30 phút</h3>
+      <p>Bán kính giao gần, ưu tiên tốc độ để cam không kịp mất độ tươi.</p>
+    </div>
+    <div class="bento-item">
+      <h3>Đặt qua Zalo, TikTok hay Facebook</h3>
+      <p>Không cần tải app, nhắn tin là có người chốt đơn trong vài phút.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIAL ===== -->
+<section class="testimonials" id="khach-noi-gi">
+  <div class="section-head">
+    <h2>Khách nói gì về Cam Hòa Lạc</h2>
+  </div>
+  <div class="testi-track">
+    <div class="testi-card">
+      <p>"Uống xong ly cam đá xay là tỉnh táo học bài tới sáng luôn, vị y như tự vắt ở nhà."</p>
+      <span>— Hải Phong, sinh viên quốc tế</span>
+    </div>
+    <div class="testi-card">
+      <p>"Đặt lúc 9h tối vẫn có người giao, đúng 25 phút là tới, cam còn mát lạnh."</p>
+      <span>— Quang Huy, dân văn phòng</span>
+    </div>
+    <div class="testi-card">
+      <p>"Vị chua ngọt rất thật, không bị gắt như mấy chỗ pha sẵn để tủ."</p>
+      <span>— Thảo Vy, content creator</span>
+    </div>
+    <div class="testi-card">
+      <p>"Mình đặt cho cả văn phòng, giá hợp lý mà chất lượng đều tay từng ly."</p>
+      <span>— Anh Tuấn, quản lý cửa hàng</span>
+    </div>
+  </div>
+</section>
+<!-- ===== FEEDBACK ===== -->
+<section class="feedback-section">
+  <div class="feedback-card">
+    <span class="feedback-icon">📩</span>
+    <div class="feedback-text">
+      <h3>Góp ý cho Cam Hòa Lạc</h3>
+      <p>Ly cam chưa vừa ý, hay bạn có ý tưởng hay ho? Gửi thẳng cho tụi mình nhé.</p>
+    </div>
+    <!-- Đổi "tenban@gmail.com" thành gmail thật của bạn -->
+    <button type="button" class="feedback-btn" onclick="openFeedbackModal()">
+  <span class="feedback-btn-bg"></span>
+  <span class="feedback-btn-label">Gửi email góp ý</span>
+</button>
+  </div>
+</section>
+
+<!-- ====== MODAL POPUP KHẢO SÁT ====== -->
+<div id="feedbackModal" class="feedback-modal-overlay" onclick="closeFeedbackModal(event)">
+  <div class="feedback-modal-box" onclick="event.stopPropagation()">
+    <button type="button" class="feedback-modal-close" onclick="closeFeedbackModal()">✕</button>
+
+    <h3>Góp ý cho ORA HOLA</h3>
+    <p class="feedback-modal-sub">Vài câu hỏi nhanh, sau đó gửi thẳng cho tụi mình.</p>
+
+    <form id="feedbackForm" onsubmit="sendFeedback(event)">
+      <label>Bạn chấm mấy sao cho ly cam?</label>
+      <div id="starRow" class="star-row">
+        <span class="star" data-v="1">★</span>
+        <span class="star" data-v="2">★</span>
+        <span class="star" data-v="3">★</span>
+        <span class="star" data-v="4">★</span>
+        <span class="star" data-v="5">★</span>
+      </div>
+      <input type="hidden" id="fb-rating" name="rating" value="0">
+      <p id="star-error" class="field-error"></p>
+
+      <label for="fb-reason">Lý do chính là gì?</label>
+      <select id="fb-reason" name="reason" required>
+        <option value="" disabled selected>-- Chọn lý do --</option>
+        <option value="Vị chưa vừa ý">Vị chưa vừa ý</option>
+        <option value="Giá chưa hợp lý">Giá chưa hợp lý</option>
+        <option value="Đóng gói / ống hút">Đóng gói / ống hút</option>
+        <option value="Thái độ phục vụ">Thái độ phục vụ</option>
+        <option value="Ý tưởng món mới">Ý tưởng món mới</option>
+        <option value="Khác">Khác</option>
+      </select>
+
+      <label for="fb-message">Góp ý chi tiết (tuỳ chọn)</label>
+      <textarea id="fb-message" name="message" rows="3" placeholder="Chia sẻ thêm cho tụi mình nhé..."></textarea>
+
+      <label for="fb-email">Email của bạn (nếu muốn nhận phản hồi)</label>
+      <input type="email" id="fb-email" name="from_email" placeholder="ban@gmail.com">
+
+      <p id="fb-status" class="feedback-status"></p>
+
+      <button type="submit" id="fb-submit-btn" class="feedback-submit-btn">Gửi khảo sát</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== ĐẶT HÀNG / CTA ===== -->
+<section class="order-cta" id="dat-hang">
+  <div class="order-inner">
+    <h2>Ly cam tiếp theo, đặt trong 10 giây</h2>
+    <p>Nhắn tụi mình qua kênh bạn hay dùng nhất — trả lời nhanh, chốt đơn liền tay, nhanh tay chọn ngay ORA HOLA.</p>
+    <div class="order-buttons">
+      <a href="#" class="channel-btn zalo">
+        <span>Zalo: 0375372436 </span>
+      </a>
+      <a href="#" class="channel-btn tiktok">
+        <span>TikTok: Hùng Vỉa Hè</span>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100093882643881" target="_blank" 
+   rel="noopener noreferrer"  class="channel-btn facebook">
+        <span>Facebook </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">Cam Hòa Lạc</span>
+      <p>Cam ép tươi mỗi ngày, giao quanh khu vực Hòa Lạc và lân cận.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#ly-do">Vì sao chọn tụi mình</a>
+      <a href="#khach-noi-gi">Khách nói gì</a>
+      <a href="#dat-hang">Đặt hàng</a>
+    </div>
+  </div>
+  <p class="footer-bottom">2026 Chọn ngay ORA HOLA. Vắt bằng tay, giao bằng tâm.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
