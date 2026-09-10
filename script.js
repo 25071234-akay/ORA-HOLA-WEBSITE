@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ===== FEEDBACK: chấm sao + mở/đóng popup + gửi email qua EmailJS ===== */
 
 // ⚠️ THAY "YOUR_PUBLIC_KEY" bằng Public Key thật ở EmailJS > Account > General
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("mX8kaenqa2_Qt_oq9");
 
 let selectedRating = 0;
 
@@ -130,7 +130,7 @@ function sendFeedback(event) {
 
   // ⚠️ THAY "YOUR_SERVICE_ID" và "YOUR_TEMPLATE_ID" bằng ID thật từ EmailJS
   emailjs
-    .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", "#feedbackForm")
+    .sendForm("service_ujq8e9c", "template_45rq7nq", "#feedbackForm")
     .then(function () {
       status.textContent = "Gửi thành công! Cảm ơn góp ý của bạn 🎉";
       status.classList.add("success");
