@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ===== FEEDBACK: chấm sao + mở/đóng popup + gửi email qua EmailJS ===== */
 
 // ⚠️ THAY "YOUR_PUBLIC_KEY" bằng Public Key thật ở EmailJS > Account > General
-emailjs.init("mX8kaenqa2_Qt_oq9");
+emailjs.init("HQqoM2sngJNt2a-Ma");
 
 let selectedRating = 0;
 
